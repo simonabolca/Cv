@@ -1,0 +1,334 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <style>
+   html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.5;
+  background: #c4d6db;
+  color: #323232;
+}
+
+img {
+  max-width: 100%;
+}
+
+.icon {
+  fill: currentColor;
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+}
+
+a {
+  color: #323232;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 32px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+img.avatar {
+  width: 130px;
+}
+
+.my-name {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.my-title {
+  font-size: 24px;
+  font-weight: 300;
+  color: #236FB2;
+}
+
+.links {
+  display: flex;
+  margin: 10px 0 20px 0;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.link-item svg {
+  margin-right: 6px;
+}
+.job {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.job:last-child {
+  border-bottom: none;
+}
+
+.job-title-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.job-company {
+  font-weight: bold;
+  line-height: 1.2;
+}
+  .links, .job-title-container {
+    flex-direction: column;
+  }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <section>
+            <div>
+                <div><img src="~/images/eu.jpg" alt="avatar" class="avatar"></div>
+            </div>
+            <div>
+                <div class="my-name">Simona Bolca</div>
+                <div class="my-title">Student</div>
+                <div class="links">
+                    <div class="link-item">
+                        <svg class="icon" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z" /></svg>
+                        <a href="mailto:email@email.com">simona.bolca@yahoo.com</a>
+                    </div>
+                    <div class="link-item">
+                        <svg class="icon" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1600 1240q0 27-10 70.5t-21 68.5q-21 50-122 106-94 51-186 51-27 0-53-3.5t-57.5-12.5-47-14.5-55.5-20.5-49-18q-98-35-175-83-127-79-264-216t-216-264q-48-77-83-175-3-9-18-49t-20.5-55.5-14.5-47-12.5-57.5-3.5-53q0-92 51-186 56-101 106-122 25-11 68.5-21t70.5-10q14 0 21 3 18 6 53 76 11 19 30 54t35 63.5 31 53.5q3 4 17.5 25t21.5 35.5 7 28.5q0 20-28.5 50t-62 55-62 53-28.5 46q0 9 5 22.5t8.5 20.5 14 24 11.5 19q76 137 174 235t235 174q2 1 19 11.5t24 14 20.5 8.5 22.5 5q18 0 46-28.5t53-62 55-62 50-28.5q14 0 28.5 7t35.5 21.5 25 17.5q25 15 53.5 31t63.5 35 54 30q70 35 76 53 3 7 3 21z" /></svg>
+                        <a href="tel:123-456-7890">0748616319</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Locul de muncă dorit</div>
+            <div class="job-title"> .Net Internship</div>
+        </section>
+
+        <section>
+            <div class="section-title">Experiență profesională</div>
+            <div>
+                <div class="job">
+                    <div class="job-title-container">
+                        <div>
+                            <div class="job-title">Proiecte realizate</div>
+                        </div>
+                    </div>
+                    <p>
+                        Aplicații de tip consolă
+                    </p>
+                    <p>Agenda pe clase,Ghicitoare,exerciții OOP,etc.</p>
+                    <p>Aplicații web folosind ASP NET MVC</p>
+                    <p>Calculator, CV template.(to be continued)</p>
+                    <div class="link-item">
+                        <a href="https://github.com/simonabolca"> Cont GitHub: https://github.com/simonabolca </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Educație</div>
+            <div>
+                <div class="job">
+                    <div class="job-title-container">
+                        <div>
+                            <div class="job-company">FastTrackIt</div>
+                            <div class="job-title">C# .NET</div>
+                        </div>
+                        <div>
+                            Martie 2019 - prezent
+                        </div>
+                    </div>
+                    <p>
+                        Competențe dobândite C #: tipuri de date, operatori, metode, clase, obiecte, principiile OOP, interfete, exceptii, colectii, dictionare.
+                    </p>
+                    <p>Cunostinte basic :  HTML, CSS, ASP.NET MVC.</p>
+                    <p>Utilizare Microsoft Visual Studio, GitHub.</p>
+                </div>
+                <div class="job">
+                    <div class="job-title-container">
+                        <div>
+                            <div class="job-company">Universitatea de medicină și Farmacie Iuliu Hațieganu,Cluj Napoca</div>
+                            <div class="job-title">Diploma de licență</div>
+                        </div>
+                        <div>
+                            Jan 2014 - Jan 2018
+                        </div>
+                    </div>
+                    <p>Studii de specialitate de scurta durată</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Competențe personale</div>
+            <div>
+                <div class="job">
+                    <div class="job-title-container">
+                        <div>
+                            <div class="job-title">Limba maternă</div>
+                        </div>
+                    </div>
+                    <p>
+                        Romana
+                    </p>
+                </div>
+                <div class="job">
+                    <div class="job-title-container">
+                        <div>
+                            <div class="job-title">Alte limbi străine cunoscute </div>
+                        </div>
+                    </div>
+                    <p>
+                        Engeza
+                    </p>
+                    <table style="width:100%">
+                        <tr>
+                            <th>Intelegere</th>
+                            <th>Vorbire</th>
+                            <th>Scriere</th>
+                        </tr>
+                        <tr>
+                            <td>B2</td>
+                            <td>B2</td>
+                            <td>B2</td>
+                        </tr>
+                    </table>
+                </div>
+        </section>
+        <section>
+            <div class="section-title">Competențe de comunicare</div>
+            <div class="job">
+                <div class="job-title-container">
+                    <div>
+                        <div class="job-title">Bune abilități de comunicare</div>
+                    </div>
+                </div>
+                <p>
+                    Competențe dobândite  în urma interacțiunii cu pacienții în cadrul stagiilor de practică efectuate în timpul celor 4 ani universitari  și în urma voluntariatului.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Informații suplimentare</div>
+            <div>
+                <div class="job">
+                    <div class="job-title-container">
+                        <div>
+                            <div class="job-company">Voluntariat</div>
+                            <div class="job-title">Spitalul Municipal Turda</div>
+                        </div>
+                        <div>
+                            Iulie 2015 - Septembire 2015
+                        </div>
+                    </div>
+                    <p>Secția Chirurgie</p>
+                </div>
+
+                <div class="job">
+                    <div class="job-title-container">
+                        <div>
+                            <div class="job-company">Voluntariat</div>
+                            <div class="job-title">Spitalul Universitar Cai Ferate Cluj-Napoca</div>
+                        </div>
+                        <div>
+                            Iulie 2016 - Septembire 2016
+                        </div>
+                    </div> <!-- end job-title container -->
+                    <p>Secția Chirurgie</p>
+                </div> <!-- end job -->
+
+                <div class="job">
+                    <div class="job-title-container">
+                        <div>
+                            <div class="job-company">Voluntariat</div>
+                            <div class="job-title">Spitalul Municipal Turda</div>
+                        </div>
+                        <div>
+                            Iulie 2017 - Septembire 2017
+                        </div>
+                    </div> <!-- end job-title container -->
+                    <p>Secția Neurologie</p>
+                </div> <!-- end job -->
+
+                <div class="job">
+                    <div class="job-title-container">
+                        <div>
+                            <div class="job-company">Voluntariat</div>
+                            <div class="job-title"> Spitalul Clinic Județean de Urgență Cluj Napoca</div>
+                        </div>
+                        <div>
+                            Octombire 2017 - Februarie 2018
+                        </div>
+                    </div> <!-- end job-title container -->
+                    <p>Secțiile: Cardiologie, Unitate primiri Urgență</p>
+                </div> <!-- end job -->
+
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
+
