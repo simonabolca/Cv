@@ -1,2 +1,2 @@
-CV page, with ASP.NET MVC, HTML, CSS.
+CV web page, with  HTML and  CSS,using ASP.NET MVC.
 
